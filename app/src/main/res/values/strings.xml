@@ -20,6 +20,7 @@
 
     <!-- Directory where the update files will be downloaded and stored.
          WARNING: The application can and will delete any unknown file. -->
+
     <string name="download_path" translatable="false">/data/xtended_updates/</string>
 
     <!-- Directory where the downloads will be exported to.
