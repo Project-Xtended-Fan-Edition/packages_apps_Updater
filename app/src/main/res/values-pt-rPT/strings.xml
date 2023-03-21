@@ -39,12 +39,6 @@
     <string name="dialog_prepare_zip_message">Preparação preliminar de atualização</string>
     <string name="dialog_battery_low_title">Bateria fraca</string>
     <string name="dialog_battery_low_message_pct">O nível da bateria está demasiado baixo. Precisa de, pelo menos, <xliff:g id="percent_discharging">%1$d</xliff:g>%% de bateria para continuar, <xliff:g id="percent_charging">%2$d</xliff:g>%% se estiver a carregar.</string>
-    <string name="dialog_scratch_mounted_message"><![CDATA[        Por favor, execute os seguintes comandos e tente novamente a atualização:\n
-        • adb root\n
-        • adb enable-verity\n
-        • adb reboot
-        ]]></string>
-    <string name="dialog_scratch_mounted_title">Não é possível instalar a atualização com OverlayFS montado</string>
     <string name="reboot">Reiniciar</string>
     <string name="menu_refresh">Atualizar</string>
     <string name="menu_preferences">Preferências</string>
@@ -60,7 +54,7 @@
     <string name="menu_show_changelog">Mostrar registo de alterações</string>
     <string name="menu_ab_perf_mode">Priorizar o processo de atualização</string>
     <string name="menu_update_recovery">Atualizar recuperação</string>
-    <string name="toast_forced_update_recovery">Não é possível desativar as atualizações da recuperação Lineage neste dispositivo.</string>
+    <string name="toast_forced_update_recovery">Não é possível desativar as atualizações da recuperação Xtended neste dispositivo.</string>
     <string name="snack_updates_found">Não foram encontradas atualizações</string>
     <string name="snack_no_updates_found">Não foram encontradas novas atualizações</string>
     <string name="snack_updates_check_failed">A verificação de atualizações falhou. Por favor, verifique a sua ligação à internet e tente novamente.</string>
@@ -68,11 +62,11 @@
     <string name="snack_download_verification_failed">A verificação da atualização falhou.</string>
     <string name="snack_download_verified">Transferência concluída.</string>
     <string name="snack_update_not_installable">Esta atualização não pode ser instalada por cima da compilação atual.</string>
-    <string name="header_title_text">LineageOS\n%1$s</string>
+    <string name="header_title_text">Xtended\n%1$s</string>
     <string name="header_android_version">Android <xliff:g id="version" example="7.1.2">%1$s</xliff:g></string>
     <string name="header_last_updates_check">Última verificação: <xliff:g id="date" example="1 January 1970">%1$s</xliff:g> (<xliff:g id="time" example="01:23">%2$s</xliff:g>)</string>
-    <string name="list_build_version">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
-    <string name="list_build_version_date">LineageOS <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
+    <string name="list_build_version">Xtended <xliff:g id="version" example="14.1">%1$s</xliff:g></string>
+    <string name="list_build_version_date">Xtended <xliff:g id="version" example="14.1">%1$s</xliff:g> - <xliff:g id="date" example="July 11, 2017">%2$s</xliff:g></string>
     <string name="list_download_progress_newer"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> de <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g></string>
     <string name="list_download_progress_eta_newer"><xliff:g id="filesize_without_unit" example="12.2">%1$s</xliff:g> de <xliff:g id="filesize_without_unit" example="310 MB">%2$s</xliff:g> (<xliff:g id="eta" example="3 minutes left">%3$s</xliff:g>)</string>
     <string name="list_verifying_update">A verificar atualização</string>
@@ -110,9 +104,7 @@
         <item quantity="other"><xliff:g id="count">%d</xliff:g> horas restantes</item>
     </plurals>
     <string name="update_over_metered_network_title">Aviso</string>
-    <string name="update_over_metered_network_message">Está prestes a transferir uma atualização através de uma rede de acesso limitado, o que provavelmente irá resultar num elevado consumo de dados. Pretende continuar?</string>
     <string name="checkbox_metered_network_warning">Não mostrar novamente</string>
-    <string name="menu_metered_network_warning">Aviso de rede de acesso limitado</string>
     <string name="blocked_update_dialog_title">Atualização bloqueada</string>
     <string name="blocked_update_dialog_message">Esta atualização não pode ser instalada usando a aplicação do atualizador.  Por favor, leia <xliff:g id="info_url">%1$s </xliff:g> para mais informações.</string>
     <string name="export_channel_title">Conclusão da exportação</string>
@@ -120,12 +112,6 @@
     <string name="ongoing_channel_title">Transferências em curso</string>
     <string name="update_failed_channel_title">A atualização falhou</string>
     <string name="info_dialog_title">Sabias que?</string>
-    <string name="info_dialog_message">As atualizações do LineageOS são pacotes de instalação completa. Isso significa que podes  instalar apenas a última atualização, mesmo que tenhas ignorado alguns deles!</string>
+    <string name="info_dialog_message">As atualizações do Xtended são pacotes de instalação completa. Isso significa que podes  instalar apenas a última atualização, mesmo que tenhas ignorado alguns deles!</string>
     <string name="info_dialog_ok">Obrigado pela informação!</string>
-    <string name="local_update_import">Atualização local</string>
-    <string name="local_update_import_progress">A importar a atualização local\u2026</string>
-    <string name="local_update_import_success">%1$s foi importada. Pretende instalar?</string>
-    <string name="local_update_import_failure">Falha ao importar a atualização local</string>
-    <string name="local_update_import_install">Instalar</string>
-    <string name="local_update_name">Atualização local</string>
 </resources>
