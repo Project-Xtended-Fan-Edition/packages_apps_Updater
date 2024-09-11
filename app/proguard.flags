@@ -1,1 +1,1 @@
--keep class com.crdroid.updater.ui.FlingBehavior { *; }
+-keep class com.xtended.updater.ui.FlingBehavior { *; }
