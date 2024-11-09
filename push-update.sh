@@ -3,13 +3,13 @@
 # SPDX-FileCopyrightText: 2018-2020 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-updates_dir=/data/lmodroid_updates
+updates_dir=/data/xtended_updates
 
 if [ ! -f "$1" ]; then
    echo "Usage: $0 ZIP [UNVERIFIED]"
    echo "Push ZIP to $updates_dir and add it to Updater"
    echo
-   echo "The name of ZIP is assumed to have LMODroid-VERSION-DATE-TYPE-* as format"
+   echo "The name of ZIP is assumed to have Project-Xtended-VERSION-DATE-TYPE-* as format"
    echo "If UNVERIFIED is set, the app will verify the update"
    exit
 fi
@@ -36,7 +36,7 @@ else
     status=2
 fi
 
-# Assume LMODroid-VERSION-DATE-TYPE-*.zip
+# Assume Project-Xtended-VERSION-DATE-TYPE-*.zip
 zip_name=`basename "$zip_path"`
 id=`echo "$zip_name" | sha1sum | cut -d' ' -f1`
 version=`echo "$zip_name" | cut -d'-' -f2`
@@ -55,8 +55,8 @@ adb shell chgrp cache "$zip_path_device"
 adb shell chmod 664 "$zip_path_device"
 
 # Kill the app before updating the database
-adb shell "killall com.libremobileos.updater 2>/dev/null"
-adb shell "sqlite3 /data/data/com.libremobileos.updater/databases/updates.db" \
+adb shell "killall com.xtended.updater 2>/dev/null"
+adb shell "sqlite3 /data/data/com.xtended.updater/databases/updates.db" \
     "\"INSERT INTO updates (status, path, download_id, timestamp, type, version, size)" \
     "  VALUES ($status, '$zip_path_device', '$id', $timestamp, '$type', '$version', $size)\""
 

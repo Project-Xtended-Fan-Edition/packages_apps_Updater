@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.libremobileos.updater.UpdateView
+                <org.xtended.updater.UpdateView
                     android:id="@+id/updateView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />

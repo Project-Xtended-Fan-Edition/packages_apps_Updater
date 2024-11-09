@@ -1,7 +1,7 @@
 import java.util.Properties
-import org.lineageos.generatebp.GenerateBpPlugin
-import org.lineageos.generatebp.GenerateBpPluginExtension
-import org.lineageos.generatebp.models.Module
+import org.xtended.generatebp.GenerateBpPlugin
+import org.xtended.generatebp.GenerateBpPluginExtension
+import org.xtended.generatebp.models.Module
 
 plugins {
     id("com.android.application")
@@ -18,7 +18,7 @@ buildscript {
     }
 
     dependencies {
-        classpath("org.lineageos:gradle-generatebp:+")
+        classpath("org.xtended:gradle-generatebp:+")
     }
 }
 
@@ -31,10 +31,10 @@ val keystoreProperties = Properties().apply {
 
 android {
     compileSdk = 34
-    namespace = "com.libremobileos.updater"
+    namespace = "org.xtended.updater"
 
     defaultConfig {
-        applicationId = "com.libremobileos.updater"
+        applicationId = "org.xtended.updater"
         minSdk = 30
         targetSdk = 34
         versionCode = 1
