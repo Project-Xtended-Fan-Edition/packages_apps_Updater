@@ -619,18 +619,13 @@ class UpdateView : LinearLayout {
     }
 
     private fun showInfoDialog() {
-        val messageString = String.format(StringGenerator.getCurrentLocale(mActivity),
-                mActivity!!.getString(R.string.blocked_update_dialog_message),
-                Utils.getUpgradeBlockedURL(mActivity))
-        val message = SpannableString(messageString)
-        Linkify.addLinks(message, Linkify.WEB_URLS)
         if (infoDialog != null) {
             infoDialog!!.dismiss()
         }
         infoDialog = AlertDialog.Builder(mActivity!!)
                 .setTitle(R.string.blocked_update_dialog_title)
                 .setPositiveButton(android.R.string.ok, null)
-                .setMessage(message)
+                .setMessage(R.string.blocked_update_dialog_message_custom)
                 .show()
         val textView = infoDialog?.requireViewById<View>(android.R.id.message) as TextView?
         textView!!.movementMethod = LinkMovementMethod.getInstance()
